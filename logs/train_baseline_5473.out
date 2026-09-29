@@ -1,0 +1,51 @@
+DATA_ROOT: /media/D1/ait_users/staff122/deepfake_project/FaceForensics++_C23
+OUTPUT_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project
+PREPROCESSED_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23
+DATA_FORMAT: ffpp
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090
+Checking preprocessed dataset root: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23
+   split  ...                                             folder
+0  train  ...  /media/D1/ait_users/staff122/deepfake_project/...
+1  train  ...  /media/D1/ait_users/staff122/deepfake_project/...
+2    val  ...  /media/D1/ait_users/staff122/deepfake_project/...
+3    val  ...  /media/D1/ait_users/staff122/deepfake_project/...
+4   test  ...  /media/D1/ait_users/staff122/deepfake_project/...
+5   test  ...  /media/D1/ait_users/staff122/deepfake_project/...
+
+[6 rows x 4 columns]
+
+OK: real and fake images exist in train/val/test.
+
+Epoch 1/10
+Train F1: 0.9663 | Val F1: 0.9609 | Val AUC: 0.9533
+Saved best model: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/baseline_efficientnet_b4_clean_best.pt
+
+Epoch 2/10
+Train F1: 0.9873 | Val F1: 0.9618 | Val AUC: 0.9547
+Saved best model: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/baseline_efficientnet_b4_clean_best.pt
+
+Epoch 3/10
+Train F1: 0.9914 | Val F1: 0.9673 | Val AUC: 0.9653
+Saved best model: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/baseline_efficientnet_b4_clean_best.pt
+
+Epoch 4/10
+Train F1: 0.9935 | Val F1: 0.9640 | Val AUC: 0.9580
+
+Epoch 5/10
+Train F1: 0.9945 | Val F1: 0.9678 | Val AUC: 0.9599
+Saved best model: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/baseline_efficientnet_b4_clean_best.pt
+
+Epoch 6/10
+Train F1: 0.9952 | Val F1: 0.9665 | Val AUC: 0.9543
+
+Epoch 7/10
+Train F1: 0.9957 | Val F1: 0.9666 | Val AUC: 0.9518
+
+Epoch 8/10
+Train F1: 0.9962 | Val F1: 0.9634 | Val AUC: 0.9516
+
+Epoch 9/10
+Train F1: 0.9973 | Val F1: 0.9660 | Val AUC: 0.9502
+Early stopping triggered.
+Saved history: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/baseline_efficientnet_b4_clean_history.csv

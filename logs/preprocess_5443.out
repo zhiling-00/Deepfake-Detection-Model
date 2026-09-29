@@ -1,0 +1,54 @@
+DATA_ROOT: /media/D1/ait_users/staff122/deepfake_project/FaceForensics++_C23
+OUTPUT_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project
+PREPROCESSED_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23
+DATA_FORMAT: ffpp
+Collected videos by label and method:
+label_name  method           
+fake        DeepFakeDetection    1000
+            Deepfakes            1000
+            Face2Face            1000
+            FaceShifter          1000
+            FaceSwap             1000
+            NeuralTextures       1000
+real        original             1000
+dtype: int64
+Video split summary:
+split  label_name
+test   fake           901
+       real           150
+train  fake          4199
+       real           700
+val    fake           900
+       real           150
+dtype: int64
+Saved split CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/video_split_FaceForensics++_C23.csv
+Using OpenCV Haar face detector.
+Saved frame metadata: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/frames_metadata_FaceForensics++_C23.csv
+Extracted image summary:
+split  label_name
+test   fake           28832
+       real            4800
+train  fake          134287
+       real           22400
+val    fake           28800
+       real            4800
+dtype: int64
+Expected folders:
+/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23/train/real
+/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23/train/fake
+/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23/val/real
+/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23/val/fake
+/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23/test/real
+/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23/test/fake
+Checking preprocessed dataset root: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23
+   split  ...                                             folder
+0  train  ...  /media/D1/ait_users/staff122/deepfake_project/...
+1  train  ...  /media/D1/ait_users/staff122/deepfake_project/...
+2    val  ...  /media/D1/ait_users/staff122/deepfake_project/...
+3    val  ...  /media/D1/ait_users/staff122/deepfake_project/...
+4   test  ...  /media/D1/ait_users/staff122/deepfake_project/...
+5   test  ...  /media/D1/ait_users/staff122/deepfake_project/...
+
+[6 rows x 4 columns]
+
+OK: real and fake images exist in train/val/test.

@@ -1,0 +1,63 @@
+DATA_ROOT: /media/D1/ait_users/staff122/deepfake_project/FaceForensics++_C23
+OUTPUT_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project
+EXTERNAL_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/DFDC_subset_77_frames
+DATASET_NAME: dfdc_subset_77
+JPG_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/dfdc_subset_77_jpg
+MODEL: efficientnet_b4
+IMG_SIZE: 380
+BATCH_SIZE: 8
+Original dataset root: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/DFDC_subset_77_frames
+Detected test folder: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/DFDC_subset_77_frames/test
+Original real images found: 2464
+Original fake images found: 2464
+Creating JPG-compatible folder: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/dfdc_subset_77_jpg
+JPG-compatible real images: 2464
+JPG-compatible fake images: 2464
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090
+================================================================================
+Evaluating: baseline_efficientnet_b4_clean
+Dataset: dfdc_subset_77
+Model path: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/baseline_efficientnet_b4_clean_best.pt
+JPG root: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/dfdc_subset_77_jpg
+================================================================================
+Saved result CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/baseline_efficientnet_b4_clean_dfdc_subset_77_clean_result.csv
+Saved prediction CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/baseline_efficientnet_b4_clean_dfdc_subset_77_clean_predictions.csv
+                       experiment  ...                                          test_root
+0  baseline_efficientnet_b4_clean  ...  /media/D1/ait_users/staff122/deepfake_project/...
+
+[1 rows x 12 columns]
+================================================================================
+Evaluating: da_efficientnet_b4_robust
+Dataset: dfdc_subset_77
+Model path: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/da_efficientnet_b4_robust_best.pt
+JPG root: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/dfdc_subset_77_jpg
+================================================================================
+Saved result CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/da_efficientnet_b4_robust_dfdc_subset_77_clean_result.csv
+Saved prediction CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/da_efficientnet_b4_robust_dfdc_subset_77_clean_predictions.csv
+                  experiment  ...                                          test_root
+0  da_efficientnet_b4_robust  ...  /media/D1/ait_users/staff122/deepfake_project/...
+
+[1 rows x 12 columns]
+================================================================================
+Evaluating: consistency_efficientnet_b4_robust
+Dataset: dfdc_subset_77
+Model path: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/consistency_efficientnet_b4_robust_best.pt
+JPG root: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/dfdc_subset_77_jpg
+================================================================================
+Saved result CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/consistency_efficientnet_b4_robust_dfdc_subset_77_clean_result.csv
+Saved prediction CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/consistency_efficientnet_b4_robust_dfdc_subset_77_clean_predictions.csv
+                           experiment  ...                                          test_root
+0  consistency_efficientnet_b4_robust  ...  /media/D1/ait_users/staff122/deepfake_project/...
+
+[1 rows x 12 columns]
+================================================================================
+dfdc_subset_77 clean-only cross-domain evaluation completed.
+Saved comparison CSV: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/dfdc_subset_77_clean_cross_domain_comparison_consistency.csv
+================================================================================
+                           experiment  ...             confusion_matrix
+0      baseline_efficientnet_b4_clean  ...  [[1429, 1035], [607, 1857]]
+1           da_efficientnet_b4_robust  ...  [[1243, 1221], [453, 2011]]
+2  consistency_efficientnet_b4_robust  ...  [[1190, 1274], [421, 2043]]
+
+[3 rows x 9 columns]

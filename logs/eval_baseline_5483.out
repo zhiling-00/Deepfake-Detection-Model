@@ -1,0 +1,18 @@
+DATA_ROOT: /media/D1/ait_users/staff122/deepfake_project/FaceForensics++_C23
+OUTPUT_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project
+PREPROCESSED_ROOT: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/preprocessed_image/FaceForensics++_C23
+DATA_FORMAT: ffpp
+Evaluating baseline_efficientnet_b4_clean on within_domain / clean...
+Evaluating baseline_efficientnet_b4_clean on within_domain / jpeg...
+Evaluating baseline_efficientnet_b4_clean on within_domain / blur...
+Evaluating baseline_efficientnet_b4_clean on within_domain / downscale...
+Evaluating baseline_efficientnet_b4_clean on within_domain / noise...
+Saved: /media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/results/baseline_efficientnet_b4_clean_within_domain_degradation_results_medium.csv
+                       experiment    dataset_tag  ...   f1_drop accuracy_drop
+0  baseline_efficientnet_b4_clean  within_domain  ...  0.000000      0.000000
+1  baseline_efficientnet_b4_clean  within_domain  ...  0.101462      0.153455
+2  baseline_efficientnet_b4_clean  within_domain  ...  0.046118      0.088398
+3  baseline_efficientnet_b4_clean  within_domain  ...  0.048001      0.092561
+4  baseline_efficientnet_b4_clean  within_domain  ...  0.048754      0.094166
+
+[5 rows x 13 columns]
