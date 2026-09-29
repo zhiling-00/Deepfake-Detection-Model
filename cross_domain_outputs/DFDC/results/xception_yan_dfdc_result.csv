@@ -1,0 +1,2 @@
+detector,dataset_tag,level,degradation,severity,accuracy,precision,recall,f1,auc,confusion_matrix,num_samples,prediction_csv
+xception,DFDC77,frame,clean,medium,0.6450892857142857,0.7540867093105899,0.43060064935064934,0.5481787651769569,0.7013295019712431,"[[2118, 346], [1403, 1061]]",4928,/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/deepfakebench_eval/xception_DFDC77_frame_predictions_clean_medium.csv

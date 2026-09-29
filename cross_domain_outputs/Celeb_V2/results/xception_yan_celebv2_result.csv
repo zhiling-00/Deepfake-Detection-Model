@@ -1,0 +1,2 @@
+detector,dataset_tag,level,degradation,severity,accuracy,precision,recall,f1,auc,confusion_matrix,num_samples,prediction_csv
+xception,CelebDF_v2,frame,clean,medium,0.7066217955062852,0.6878685009826693,0.7598184329978291,0.7220555138784697,0.7900092689650503,"[[3289, 1747], [1217, 3850]]",10103,/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/deepfakebench_eval/xception_CelebDF_v2_frame_predictions_clean_medium.csv

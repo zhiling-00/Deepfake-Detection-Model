@@ -1,0 +1,6 @@
+experiment,dataset_tag,degradation,accuracy,precision,recall,f1,auc,confusion_matrix
+baseline_efficientnet_b4_clean,celeb_v2,clean,0.567455211,0.537810567,0.978290902,0.694063288,0.757172475,"[[776, 4260], [110, 4957]]"
+da_efficientnet_b4_robust,celeb_v2,clean,0.64812432,0.6,0.895204263,0.718460442,0.764894379,"[[2012, 3024], [531, 4536]]"
+consistency_efficientnet_b4_robust,celeb_v2,clean,0.619518955,0.571278704,0.967238997,0.718305731,0.795734066,"[[1358, 3678], [166, 4901]]"
+efficientnetb4,celeb_v2,clean,0.688805305,0.718671822,0.623643181,0.667793745,0.759346246,"[[3799, 1237], [1907, 3160]]"
+xception,celeb_v2,clean,0.706621796,0.687868501,0.759818433,0.722055514,0.790009269,"[[3289, 1747], [1217, 3850]]"

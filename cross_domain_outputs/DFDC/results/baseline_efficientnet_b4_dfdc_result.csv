@@ -1,0 +1,2 @@
+experiment,dataset_tag,degradation,accuracy,precision,recall,f1,auc,loss,confusion_matrix,model_path,test_root
+baseline_efficientnet_b4_clean,dfdc_subset_77,clean,0.666801948051948,0.6421161825726142,0.7536525974025974,0.693427931292009,0.7315650562911116,1.6344761333055515,"[[1429, 1035], [607, 1857]]",/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/baseline_efficientnet_b4_clean_best.pt,/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/dfdc_subset_77_jpg

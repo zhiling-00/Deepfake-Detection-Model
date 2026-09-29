@@ -1,0 +1,2 @@
+experiment,dataset_tag,degradation,accuracy,precision,recall,f1,auc,loss,confusion_matrix,model_path,test_root
+da_efficientnet_b4_robust,celeb_v2,clean,0.64812432,0.6,0.895204263,0.718460442,0.764894379,1.397677163,"[[2012, 3024], [531, 4536]]",/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/models/da_efficientnet_b4_robust_best.pt,/media/D1/ait_users/staff122/deepfake_project/outputs_deepfake_project/celeb_v2_jpg
